@@ -1,15 +1,16 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyC4RNNlqXSwTM1Kt6Pbgutq2yuavSQ9WnU',
-    authDomain: 'ismaestro-angularexampleapp.firebaseapp.com',
-    databaseURL: 'https://ismaestro-angularexampleapp.firebaseio.com',
-    projectId: 'ismaestro-angularexampleapp',
-    storageBucket: 'ismaestro-angularexampleapp.appspot.com',
-    messagingSenderId: '965114235515'
+    apiKey: "AIzaSyACkmAxvhWGq57L-VYRFZejrTY4xnNnSio",
+    authDomain: "angular-example-app-d0c85.firebaseapp.com",
+    projectId: "angular-example-app-d0c85",
+    storageBucket: "angular-example-app-d0c85.appspot.com",
+    messagingSenderId: "713292381962",
+    appId: "1:713292381962:web:7bb666280dff5da3a8c4f3",
+    measurementId: "G-KB8ZZTFHFR"
+
   }
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
