@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: heroes-deployment 
+spec: 
+  selector: 
+    matchLabels: 
+      app: heroes-app 
+  replicas: 2
+  template:
+    metadata: 
+      labels: 
+        app: heroes-app
+    spec: 
+      containers: 
+      - name: heroes-app 
+        image: mjn2k18/heroes-app:#{Build.BuildId}#
+        ports: 
+        - containerPort: 80 
+--- 
+kind: Service 
+apiVersion: v1 
+metadata: 
+  name: heroes-app 
+spec: 
+  selector: 
+    app: heroes-app 
+  ports: 
+  - protocol: TCP 
+    port: 80 
+    targetPort: 80 
+  type: LoadBalancer 
